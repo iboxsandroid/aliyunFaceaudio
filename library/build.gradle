@@ -9,7 +9,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
-        versionName "1.0.1"
+        versionName "1.0.3"
     }
     
     // 避免配置时间属性访问问题
@@ -26,8 +26,8 @@ publishing {
     publications {
         aar(MavenPublication) {
             groupId = 'com.github.iboxsandroid'
-            artifactId = 'faceaudio'
-            version = '1.0.2'
+            artifactId = 'aliyunFaceaudio'
+            version = '1.0.3'
             
             // 指定AAR文件路径
             artifact("$projectDir/src/main/aar/aliyun-faceaudio-2.3.35.250512103048.aar")
@@ -36,7 +36,7 @@ publishing {
             pom {
                 name = 'ijkplayer'
                 description = 'ijkplayer'
-                url = 'https://github.com/iboxsandroid/faceaudio'
+                url = 'https://github.com/iboxsandroid/aliyunFaceaudio'
                 
                 licenses {
                     license {
@@ -54,9 +54,9 @@ publishing {
                 }
                 
                 scm {
-                    connection = 'scm:git:git://github.com/iboxsandroid/faceaudio.git'
-                    developerConnection = 'scm:git:ssh://github.com/iboxsandroid/faceaudio.git'
-                    url = 'https://github.com/iboxsandroid/faceaudio'
+                    connection = 'scm:git:git://github.com/iboxsandroid/aliyunFaceaudio.git'
+                    developerConnection = 'scm:git:ssh://github.com/iboxsandroid/aliyunFaceaudio.git'
+                    url = 'https://github.com/iboxsandroid/aliyunFaceaudio'
                 }
             }
         }
